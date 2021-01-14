@@ -108,4 +108,6 @@ USER curl_user
 ###############################################################
 COPY "entrypoint.sh" "/entrypoint.sh"
 CMD ["curl"]
+WORKDIR /work
+VOLUME /work
 ENTRYPOINT ["/entrypoint.sh"]
